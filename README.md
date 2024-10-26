@@ -1,18 +1,19 @@
-#Team AI Or Not
+# Team AI Or Not
 
-##Members
+## Members
 
 - Jacques Castonguay
 - Mihal Zavalani
 - Safa Khatoon
 
-##Sources
+## Sources
+
 CNN design:
 https://learn.microsoft.com/en-us/windows/ai/windows-ml/tutorials/pytorch-train-model
 Dataset:
 https://www.kaggle.com/datasets/birdy654/cifake-real-and-ai-generated-synthetic-images
 
-##Steps: 0. Optional - run in a virtual environment (Windows)
+## Steps: 0. Optional - run in a virtual environment (Windows)
 
 - open terminal in this project space/folder
 - create a virtual environment: `python -m venv myenv`
