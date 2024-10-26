@@ -42,11 +42,11 @@ test_set = CustomImageDataset.CustomImageDataset(
 )
 # Create a loader for the test set which will read the data within batch size and put into memory. 
 # Note that each shuffle is set to false for the test loader.
-test_loader = DataLoader(test_set, batch_size=batch_size, shuffle=False, num_workers=0)
+test_loader = DataLoader(test_set, batch_size=batch_size, shuffle=True, num_workers=0)
 print("The number of images in a test set is: ", len(test_loader)*batch_size)
 
 print("The number of batches per epoch is: ", len(train_loader))
-classes = ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
+classes = ('real', 'fake')
 
 
 
@@ -208,7 +208,13 @@ def testBatch():
 if __name__ == "__main__":
 
     # Let's build our model
-    train(2)
+    #Epochs - accuracies
+    # 2 - 92%
+    # 4 - 93%
+    # 8 - 93% <-over fitting? trying with 6
+    # looking back 4 & 5 are both 93%. Might as well be 4.
+
+    train(6)
     print('Finished Training')
 
     # Test which classes performed well
