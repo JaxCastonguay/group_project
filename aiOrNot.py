@@ -211,7 +211,7 @@ if __name__ == "__main__":
     #Epochs - accuracies
     # 2 - 92%
     # 4 - 93%
-    # 8 - 93% <-over fitting? trying with 6
+    # 8 - 92% <-over fitting? trying with 6
     # looking back 4 & 5 are both 93%. Might as well be 4.
 
     train(6)
